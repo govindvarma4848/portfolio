@@ -1908,3 +1908,60 @@ textarea.form-input {
   }
 
 }
+/* =========================================
+📱 CONTACT & FOOTER MOBILE FIX ONLY
+========================================= */
+
+@media screen and (max-width:768px){
+
+  /* CONTACT SECTION */
+
+  #contact{
+    padding:5rem 1rem;
+  }
+
+  .contact-container,
+  .contact-grid,
+  .contact-content{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    gap:1.5rem;
+  }
+
+  .contact-form,
+  .contact-card,
+  .contact-info{
+    width:100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    width:100%;
+  }
+
+  /* FOOTER */
+
+  footer{
+    padding:2rem 1rem;
+    text-align:center;
+  }
+
+  .footer-container,
+  .footer-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    width:100%;
+  }
+
+  .footer-links,
+  .footer-socials{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
+  }
+
+}
