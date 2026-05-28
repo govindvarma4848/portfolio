@@ -1859,3 +1859,52 @@ textarea.form-input {
   }
 
 }
+```css
+/* =========================================
+📱 DASHBOARD MOBILE FIX
+========================================= */
+
+@media screen and (max-width:768px){
+
+  .dashboard-grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .chart-card{
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+  }
+
+  .chart-wrapper{
+    width: 100%;
+    height: 250px;
+  }
+
+  canvas{
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .metrics-row{
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card{
+    width: 100%;
+  }
+
+  .heatmap-grid{
+    overflow-x: auto;
+    display: flex;
+    gap: 3px;
+    padding-bottom: 10px;
+  }
+
+  .activity-heatmap-card{
+    overflow-x: auto;
+  }
+
+}
+```
