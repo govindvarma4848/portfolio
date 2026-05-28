@@ -553,3 +553,23 @@ const navMenu = document.getElementById('nav-links');
 mobileToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
+/* =========================================
+📱 MOBILE MENU TOGGLE FIX
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const mobileToggle = document.getElementById("mobile-toggle");
+  const navMenu = document.getElementById("nav-links");
+
+  if (mobileToggle && navMenu) {
+
+    mobileToggle.addEventListener("click", function () {
+
+      navMenu.classList.toggle("active");
+
+    });
+
+  }
+
+});
