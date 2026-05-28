@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adapa Govind Varma | AI Engineer & B.Tech CSE Student Portfolio</title>
+  
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Portfolio of Adapa Govind Varma, CSE (Artificial Intelligence) student specializing in Machine Learning, Python, Java, and web development. Check out my featured RAG projects, certifications, and AI stats.">
+  <meta name="keywords" content="Adapa Govind Varma, AI Engineer Portfolio, CSE AI student, Machine Learning Developer, Python Java Web, Sri Vasavi B.Tech, Govind Varma Portfolio">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- 🌌 BACKGROUND CANVAS SYSTEM -->
+  <canvas id="bg-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- 1️⃣ LOADER SCREEN -->
+  <div id="loader-screen">
+    <div class="loader-container">
+      <div class="loader-circle">
+        <div class="loader-percentage" id="loader-pct">0%</div>
+      </div>
+      <div class="loader-text" id="loader-status">Initializing AI Core...</div>
+    </div>
+  </div>
+
+  <!--  NAVIGATION HEADER -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-brain"></i> GOVIND VARMA <span>.AI</span>
+      </a>
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <nav class="nav-menu" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#dashboard" class="nav-link">Analytics</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2️⃣ HERO SECTION -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="hero-pre"><i class="fa-solid fa-terminal"></i> system_status: Online</span>
+        <h1 class="hero-name">Adapa Govind <span>Varma</span></h1>
+        <div class="hero-typing">I am a <span id="typing-text"></span></div>
+        <p class="hero-intro">
+          Motivated Computer Science Engineering student specializing in **Artificial Intelligence** with a strong foundation in Java, Python, and modern web architectures. Building RAG systems, digital solutions, and data analytics dashboards.
+        </p>
+        <div class="hero-actions">
+          <a href="#resume" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+          <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/govindvarma4848" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/govind-varma-adapa" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:govindvarma48848@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image-container">
+          <!-- Checks if profile.jpg exists, otherwise defaults to standard placeholder -->
+          <img src="C:\Users\Hp\Desktop\portfolioWeb\images\myphoto.jpg.jpeg" alt="Adapa Govind Varma" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3️⃣ ABOUT SECTION -->
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">01 // Agent Identity</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="about-card-img">
+          <img src="C:\Users\Hp\Desktop\portfolioWeb\images\myphoto.jpg.jpeg" alt="Govind Varma Portrait" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600'">
+        </div>
+      </div>
+      <div class="about-right">
+        <h3 class="about-intro-h">Designing Intelligent Solutions</h3>
+        <p class="about-text">
+          I am a passionate AI enthusiast currently pursuing my **Bachelor of Technology in Computer Science Engineering (Artificial Intelligence)** at Sri Vasavi Engineering College. I specialize in backend logic, database structures, algorithmic architectures, and responsive frontend systems.
+        </p>
+        <p class="about-text">
+          My development philosophy emphasizes consistency, persistence, and continuous, self-driven learning. Whether it is tuning an LLM model, optimizing a RAG workflow, or detailing a custom digital interface CI/CD Tools, I bring a methodical and analytical mindset to problem solving.
+        </p>
+        
+        <div class="about-details">
+          <div class="about-detail-item">
+            <div class="about-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="about-detail-info">
+              <h4>Location</h4>
+              <p>Andhra Pradesh, India</p>
+            </div>
+          </div>
+          <div class="about-detail-item">
+            <div class="about-detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="about-detail-info">
+              <h4>College</h4>
+              <p>Sri Vasavi Engg. College</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Trajectory -->
+        <div class="education-showcase">
+          <h3 class="edu-title"><i class="fa-solid fa-user-graduate"></i> Academic Trajectory</h3>
+          <div class="edu-cards">
+            <div class="edu-card glass-panel">
+              <div class="edu-main">
+                <h3>B.Tech - Computer Science (Artificial Intelligence)</h3>
+<p>
+  Sri Vasavi Engineering College, Tadepalligudem
+  <a href="https://srivasaviengg.ac.in/" 
+     target="_blank" 
+     class="college-link">
+    <b>[Visit College]</b>
+  </a>
+</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-year">2024 - 2027</span>
+                <div class="edu-grade">CGPA: 8.5/10</div>
+              </div>
+            </div>
+            <div class="edu-card glass-panel">
+              <div class="edu-main">
+                <h3>Diploma in Computer Engineering</h3>
+<p>
+  BVC College of Engineering, Rajahmundry
+  <a href="https://bvcr.edu.in/" 
+     target="_blank" 
+     class="college-link">
+    <b>[Visit College]</b>
+  </a>
+</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-year">2021 - 2024</span>
+                <div class="edu-grade">Percentage: 77.57%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4️⃣ SKILLS SECTION -->
+  <section id="skills" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">02 // Cyber Deck</span>
+      <h2 class="section-title">Technical Mastery</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category glass-panel glow-card-blue">
+        <h3 class="skill-category-title"><i class="fa-solid fa-code"></i> Languages & Web</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Java (Core & OOPs)</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+          </div>
+            <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">HTML5 / CSS3 / JavaScript </span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="90%"></div></div>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Python (AI Basics)</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="75%"></div></div>
+          </div>
+        <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">AI/ML:<p class="about-text">(NumPy, Pandas, Machine Learning Basics, LLM Fine-Tuning, RAG, FAISS, Hugging Face)</p></span>
+              <span class="skill-pct">76%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="76%"></div></div>
+          </div>
+                    <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Deep Learning (DL Basics)</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="82%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category glass-panel glow-card-purple">
+        <h3 class="skill-category-title"><i class="fa-solid fa-microchip"></i> Databases & Devops</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">SQL (MySQL)</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80%"></div></div>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">NoSQL (MongoDB)</span>
+              <span class="skill-pct">79%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="79%"></div></div>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Docker / Cloud Basics</span>
+              <span class="skill-pct">77%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="77%"></div></div>
+          </div>
+                  <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Tools & Platforms: <p class="about-text">(Git, GitHub, VS Code, Jenkins, Kubernetes, AWS Basics)</p></span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="78%"></div></div>
+          </div>
+                            <div class="skill-bar-container">
+            <div class="skill-info">
+              <span class="skill-name">Core Concepts:<p class="about-text">(DBMS, Operating Systems, OOPs, Data Structures, Computer Networks)</p></span>
+              <span class="skill-pct">81%</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="81%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📊 SKILLS CHARTS -->
+    <div class="skills-charts-container">
+      <div class="chart-card glass-panel">
+        <h3>System Capability Spectrum</h3>
+        <div class="chart-wrapper">
+          <canvas id="skillsRadarChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card glass-panel">
+        <h3>AI & Core Dials</h3>
+        <div class="radial-skills">
+          <div class="radial-skill">
+            <div class="circle-progress" data-percent="85">
+              <svg>
+                <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                <circle class="circle-fill" cx="45" cy="45" r="40"></circle>
+              </svg>
+              <div class="circle-text">85%</div>
+            </div>
+            <span class="radial-title">AI Logic</span>
+          </div>
+          <div class="radial-skill">
+            <div class="circle-progress" data-percent="75">
+              <svg>
+                <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                <circle class="circle-fill" cx="45" cy="45" r="40" style="stroke: var(--purple-glow); filter: drop-shadow(0 0 4px var(--purple-glow));"></circle>
+              </svg>
+              <div class="circle-text">75%</div>
+            </div>
+            <span class="radial-title">ML Frameworks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5️⃣ FEATURED PROJECTS SECTION -->
+  <section id="projects" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">03 // AI Lab Repos</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass-panel">
+        <div class="project-header">
+          <div class="project-icon-box"><i class="fa-solid fa-robot"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/govindvarma4848/Mini-Project" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+            <a href="https://llm-rag-legalsupport.vercel.app/" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Legal Document Summarizer</h3>
+        <p class="project-desc">
+          AI-powered document extraction and key summarization tool utilizing fine-tuned **Llama-2-7B** model and **Retrieval-Augmented Generation (RAG)** architecture. Uses FAISS vector store for semantic retrieval and Hugging Face pipelines, fully integrated with Next.js and FastAPI. Deployed via Docker.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">Python</span>
+          <span class="tech-chip">Llama-2</span>
+          <span class="tech-chip">RAG</span>
+          <span class="tech-chip">FAISS</span>
+          <span class="tech-chip">FastAPI</span>
+          <span class="tech-chip">Docker</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass-panel">
+        <div class="project-header">
+          <div class="project-icon-box"><i class="fa-solid fa-calculator"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/govindvarma4848/calculator-app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+            <a href="https://calculator-app-neo.vercel.app/" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Simple Digital Calculator</h3>
+        <p class="project-desc">
+          A fully responsive, interactive digital calculator designed with pure frontend technologies. Built to handle standard arithmetic, float numbers, and active memory values. Employs comprehensive DOM events and CSS responsive styling.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">HTML5</span>
+          <span class="tech-chip">CSS3</span>
+          <span class="tech-chip">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card glass-panel">
+        <div class="project-header">
+          <div class="project-icon-box"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/govindvarma4848" class="project-link" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.tripadvisor.in/Attractions-g297585-Activities-Andhra_Pradesh.html" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Tourism Places in AP<br>(On-going)</h3>
+        <p class="project-desc">
+          (Ongoing) Web application displaying details about beautiful travel spots in Andhra Pradesh. Features location-specific details, estimated travel budgets, distance matrices, and custom route suggestions.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">HTML5</span>
+          <span class="tech-chip">CSS3</span>
+          <span class="tech-chip">JS DOM</span>
+          <span class="tech-chip">APIs</span>
+        </div>
+      </div>
+
+<!-- Project 4 -->
+<div class="project-card glass-panel">
+  <div class="project-header">
+    <div class="project-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+
+    <div class="project-links">
+      <a href="https://github.com/govindvarma4848/eduford-university-website" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://worldbiggestuniversity.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+
+  <h3 class="project-title">World Biggest University Website</h3>
+
+  <p class="project-desc">
+    A modern and fully responsive university website developed using frontend technologies. 
+    Includes sections for courses, campus details, facilities, student testimonials, and 
+    contact information with clean UI design and responsive layouts.
+  </p>
+
+  <div class="project-tech">
+    <span class="tech-chip">HTML5</span>
+    <span class="tech-chip">CSS3</span>
+    <span class="tech-chip">JavaScript</span>
+  </div>
+</div>
+
+         <!-- Project 5 -->
+<div class="project-card glass-panel">
+  <div class="project-header">
+    <div class="project-icon-box"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
+
+    <div class="project-links">
+      <a href="https://github.com/govindvarma4848/advanced-js-counter" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://advanced-js-counter.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+
+  <h3 class="project-title">Advanced JavaScript Counter App</h3>
+
+  <p class="project-desc">
+    An interactive and responsive counter application developed using JavaScript. 
+    Features increment, decrement, reset, and dynamic counter updates with smooth 
+    DOM manipulation and responsive frontend design for enhanced user interaction.
+  </p>
+
+  <div class="project-tech">
+    <span class="tech-chip">HTML5</span>
+    <span class="tech-chip">CSS3</span>
+    <span class="tech-chip">JavaScript</span>
+  </div>
+</div>
+
+     <!-- Project 6 -->
+<div class="project-card glass-panel">
+  <div class="project-header">
+    <div class="project-icon-box"><i class="fa-solid fa-earth-americas"></i></div>
+
+    <div class="project-links">
+      <a href="https://github.com/govindvarma4848/country-currency-explorer" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://country-currency-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+
+  <h3 class="project-title">Country Currency Explorer</h3>
+
+  <p class="project-desc">
+    A responsive country and currency explorer application built using frontend technologies. 
+    Allows users to search and explore countries, view currency details, country information, 
+    flags, and other related data with dynamic API integration and interactive UI design.
+  </p>
+
+  <div class="project-tech">
+    <span class="tech-chip">HTML5</span>
+    <span class="tech-chip">CSS3</span>
+    <span class="tech-chip">JavaScript</span>
+    <span class="tech-chip">REST API</span>
+  </div>
+</div>
+
+        <!-- Project 7 -->
+<div class="project-card glass-panel">
+  <div class="project-header">
+    <div class="project-icon-box"><i class="fa-solid fa-plane-departure"></i></div>
+
+    <div class="project-links">
+      <a href="https://github.com/govindvarma4848/travel-without-limits" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://travel-without-limits.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+
+  <h3 class="project-title">Travel Without Limits Website</h3>
+
+  <p class="project-desc">
+    A modern and responsive travel website designed to showcase travel destinations, 
+    adventure experiences, and tour services with attractive UI layouts. Features smooth 
+    navigation, responsive sections, engaging visuals, and interactive frontend components.
+  </p>
+
+  <div class="project-tech">
+    <span class="tech-chip">HTML5</span>
+    <span class="tech-chip">CSS3</span>
+    <span class="tech-chip">JavaScript</span>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- 6️⃣ AI DASHBOARD / ANALYTICS SECTION -->
+  <section id="dashboard" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">04 // Central Command</span>
+      <h2 class="section-title">AI Core Analytics</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Metrics Row -->
+    <div class="metrics-row">
+      <div class="metric-card glass-panel metric-blue">
+        <div class="metric-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="metric-info">
+          <h3>250+</h3>
+          <p>LeetCode Solved</p>
+        </div>
+      </div>
+      <div class="metric-card glass-panel metric-purple">
+        <div class="metric-icon-box"><i class="fa-solid fa-code-branch"></i></div>
+        <div class="metric-info">
+          <h3>450+</h3>
+          <p>GFG Solved</p>
+        </div>
+      </div>
+      <div class="metric-card glass-panel metric-blue">
+        <div class="metric-icon-box"><i class="fa-solid fa-clock"></i></div>
+        <div class="metric-info">
+          <h3>1000+</h3>
+          <p>Coding Hours</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Graphs -->
+    <div class="dashboard-grid">
+      <div class="chart-card glass-panel">
+        <h3>Algorithm & Coding Growth Velocity</h3>
+        <div class="chart-wrapper">
+          <canvas id="codingProgressChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card glass-panel">
+        <h3>System Competence Distribution</h3>
+        <div class="chart-wrapper">
+          <canvas id="competenceDoughnutChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Heatmap contribution mock panel -->
+    <div class="activity-heatmap-card glass-panel">
+      <h3>Neural Synapse Contributions (Activity Heatmap)</h3>
+      <div class="heatmap-grid" id="heatmap-grid">
+        <!-- Cells generated in JS for pristine look -->
+      </div>
+      <div class="heatmap-legend">
+        <span>Less</span>
+        <div class="legend-cell" style="background: rgba(255, 255, 255, 0.02)"></div>
+        <div class="legend-cell heatmap-level-1"></div>
+        <div class="legend-cell heatmap-level-2"></div>
+        <div class="legend-cell heatmap-level-3"></div>
+        <div class="legend-cell heatmap-level-4"></div>
+        <span>More</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7️⃣ EXPERIENCE / TIMELINE SECTION -->
+  <section id="experience" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">05 // Memory Logs</span>
+      <h2 class="section-title">Development Timeline</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel glow-card-blue">
+          <div class="timeline-meta">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-type">Experience</span>
+          </div>
+          <h3>• Java Full Stack Internship – HQL EduTech (6 Months)</h3>
+          <p>
+             - Completed internship on Java Full Stack Development <br>
+             - Duration: Nov 2023 – May 2024
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel glow-card-blue">
+          <div class="timeline-meta">
+            <span class="timeline-year">2026 - Present</span>
+            <span class="timeline-type">Freelance</span>
+          </div>
+          <h3>Self-Driven Learning & Development</h3>
+          <p>
+            Designing and training machine learning pipelines, RAG frameworks, and full-stack utilities. Practicing database optimization (MySQL/MongoDB), DevOps deployments, and competitive problem solving.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel glow-card-purple">
+          <div class="timeline-meta">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-type">Academic Project</span>
+          </div>
+          <h3>AI/ML Pipeline Integration</h3>
+          <p>
+            Pioneered a Legal Document Summarizer using fine-tuned Llama-2 algorithms, FAISS similarity search, FastAPI, and Dockerized environments. Focus on performance efficiency and semantic precision.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel glow-card-blue">
+          <div class="timeline-meta">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-type">Academic Training</span>
+          </div>
+          <h3>B.Tech - Artificial Intelligence Major</h3>
+          <p>
+            Commenced Bachelor of Technology at Sri Vasavi Engineering College. Developed core Java skills, data structures, and database management engines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8️⃣ CERTIFICATIONS SECTION -->
+  <section id="certifications" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">06 // Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="certs-grid">
+
+<div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+  <div class="cert-info">
+    <h3>Java Full Stack Internship</h3>
+    <p>HQL EduTech Internship Completion Certificate</p>
+    <p class="about-text">
+      Successfully completed a 6-month internship focused on Java Full Stack development, covering frontend, backend, databases, and real-world application development.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+
+            <div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-brands fa-salesforce"></i></div>
+  <div class="cert-info">
+    <h3>Salesforce Agentforce Specialist</h3>
+    <p>Salesforce Certified Professional</p>
+    <p class="about-text">
+      Certified in Salesforce Agentforce specialization with skills in AI-powered CRM solutions, automation workflows, customer engagement, and Salesforce ecosystem fundamentals.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+          <div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+  <div class="cert-info">
+    <h3>Oracle Certified Foundations Provisional</h3>
+    <p>Oracle Cloud Infrastructure 2025 Certified</p>
+    <p class="about-text">
+      Certified in Oracle Cloud Infrastructure AI Foundations with knowledge of AI concepts, machine learning fundamentals, cloud services, and Oracle AI ecosystem technologies.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+           <div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+  <div class="cert-info">
+    <h3>AI Skills Passport</h3>
+    <p>EY & Microsoft Certification</p>
+    <p class="about-text">
+      Successfully completed the AI Skills Passport program covering AI fundamentals, employability skills, technology awareness, and practical business applications of artificial intelligence.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+        <div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+  <div class="cert-info">
+    <h3>Gen AI NASSCOM</h3>
+    <p>Skill Development Program Certification</p>
+    <p class="about-text">
+      Successfully completed the GEN AI NASSCOM course under the Skill Development Program, gaining practical knowledge in Generative AI concepts, industry applications, and AI-driven technologies.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+      <div class="cert-card glass-panel glow-card-blue">
+        <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+        <div class="cert-info">
+          <h3>Python Core Credentials</h3>
+          <p>HackerRank / Academic Platforms</p>
+          <p class="about-text">Demonstrates proficiency in scripting, algorithms, and modular object-oriented programming in Python.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Verify <i class="fa-solid fa-external-link"></i></a>
+      </div>
+
+      <div class="cert-card glass-panel glow-card-blue">
+        <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+        <div class="cert-info">
+          <h3>AI & Machine Learning Core</h3>
+          <p>Sri Vasavi Academic Curriculum</p>
+          <p class="about-text">Covering NumPy, Pandas, Scikit-Learn pipelines, neural activation layers, and optimization techniques.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Verify <i class="fa-solid fa-external-link"></i></a>
+      </div>
+
+             <div class="cert-card glass-panel glow-card-purple">
+  <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+  <div class="cert-info">
+    <h3>Introduction to Internet of Things</h3>
+    <p>NPTEL Online Certification - IIT Kharagpur</p>
+    <p class="about-text">
+      Successfully completed a 12-week NPTEL course on Internet of Things (IoT), covering smart devices, sensors, embedded systems, networking, and IoT application development with an Elite certification score.
+    </p>
+  </div>
+  <a href="https://drive.google.com/drive/folders/1nUsMkPF2E-EV4EiE7RDR86GBqfy43wqx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    Verify <i class="fa-solid fa-external-link"></i>
+  </a>
+</div>
+
+    </div>
+  </section>
+
+  <!-- 9️⃣ SERVICES SECTION -->
+  <section id="services" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">07 // Vectors of Work</span>
+      <h2 class="section-title">My Services</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass-panel glow-card-blue">
+        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>AI & ML Integration</h3>
+        <p>Developing intelligent applications using RAG architecture, LLM pipelines, FAISS, and custom vector store lookups.</p>
+      </div>
+
+      <div class="service-card glass-panel glow-card-purple">
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Full-Stack Solutions</h3>
+        <p>Designing seamless client interfaces in HTML/CSS/JS/React connected to performance-oriented API architectures in Python/FastAPI.</p>
+      </div>
+
+      <div class="service-card glass-panel glow-card-blue">
+        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database Architecture</h3>
+        <p>Optimizing relational schemas (MySQL) and flexible document models (MongoDB) for absolute performance and seamless queries.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- 🔟 RESUME SECTION -->
+<section id="resume" class="reveal">
+  <div class="section-header">
+    <span class="section-tag">08 // Dossier</span>
+    <h2 class="section-title">My Resume</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="resume-section-container">
+    <div class="resume-card glass-panel">
+      <div class="resume-info">
+        <span class="resume-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          ATS-Optimized Core
+        </span>
+
+        <h3>Ready for Recruitment</h3>
+
+        <p>
+          Download my clean, comprehensive resume file directly
+          to review my qualifications, courses, and project list.
+        </p>
+      </div>
+
+      <!-- Resume Button -->
+      <a href="./resume.pdf"
+         target="_blank"
+         class="btn btn-primary">
+
+        <i class="fa-solid fa-file-arrow-down"></i>
+        Download Resume (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- 1️⃣1️⃣ GITHUB ACTIVITY SECTION & 1️⃣2️⃣ ACHIEVEMENTS -->
+  <section id="github-streak" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">09 // Commits & Milestones</span>
+      <h2 class="section-title">GitHub & Achievements</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="github-grid">
+      <div class="github-chart-card glass-panel">
+        <div class="github-chart-header">
+          <h3>System Stream Metrics</h3>
+          <span class="tech-chip">GitHub Integrations</span>
+        </div>
+        <div class="github-stats-list">
+          <div class="github-stat-item">
+            <span class="github-stat-num">10+</span>
+            <span class="github-stat-label">Repositories</span>
+          </div>
+          <div class="github-stat-item">
+            <span class="github-stat-num">500+</span>
+            <span class="github-stat-label">Annual Commits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-panel">
+        <h3 class="edu-title"><i class="fa-solid fa-award"></i> Core Achievements</h3>
+        <ul style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+          <li class="about-detail-item">
+            <div class="about-detail-icon" style="color: var(--purple-glow); background: rgba(123,46,255,0.1);"><i class="fa-solid fa-trophy"></i></div>
+            <div class="about-detail-info">
+              <h4>Competitive Programming</h4>
+              <p>Solved 300+ problems on LeetCode & 450+ on GFG.</p>
+            </div>
+          </li>
+          <li class="about-detail-item">
+            <div class="about-detail-icon" style="color: var(--neon-blue); background: rgba(0,245,255,0.1);"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="about-detail-info">
+              <h4>Hackathons & Events</h4>
+              <p>Participated in college tech hackathons & competitive challenges.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1️⃣3️⃣ CONTACT SECTION -->
+  <section id="contact" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">10 // Communication Loop</span>
+      <h2 class="section-title">Establish Link</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h3 class="about-intro-h">Ready to Collaborate</h3>
+        <p class="about-text">
+          Want to collaborate on an AI system, discuss a project role, or ask academic questions? Drop me a secure transmission, and I will get back to you!
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <h4>Secure Email</h4>
+              <p><a href="mailto:govindvarma48848@gmail.com">govindvarma48848@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info-text">
+              <h4>Cell Link</h4>
+              <p>+91 7013061680</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-arrow"></i></div>
+            <div class="contact-info-text">
+              <h4>Location Node</h4>
+              <p>Andhra Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right glass-panel">
+        <form class="contact-form" id="cyber-contact-form">
+          <div class="form-group">
+            <label for="form-name">Identity (Name)</label>
+            <input type="text" id="form-name" class="form-input" placeholder="Your name..." required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Channel (Email)</label>
+            <input type="email" id="form-email" class="form-input" placeholder="Your email..." required>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="form-msg">Transmission (Message)</label>
+            <textarea id="form-msg" class="form-input" placeholder="Enter transmission..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Transmission</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1️⃣4️⃣ FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        GOVIND VARMA <span>.AI</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#hero" class="footer-nav-link">Home</a>
+        <a href="#about" class="footer-nav-link">About</a>
+        <a href="#skills" class="footer-nav-link">Skills</a>
+        <a href="#projects" class="footer-nav-link">Projects</a>
+        <a href="#contact" class="footer-nav-link">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/govindvarma4848" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/govind-varma-adapa" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:govindvarma48848@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adapa Govind Varma. All neural networks reserved.</p>
+        <a href="#hero" class="footer-btn-top" aria-label="Scroll to Top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Libraries via CDN -->
+  <!-- Chart.js for gorgeous dashboard telemetry -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- GSAP for micro animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Custom Core Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
