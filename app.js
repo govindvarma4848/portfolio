@@ -541,7 +541,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+/* your existing code above */
 
+/* =====================================
+📱 MOBILE NAVIGATION MENU
+===================================== */
+
+const mobileToggle = document.getElementById('mobile-toggle');
+const navMenu = document.getElementById('nav-links');
+
+mobileToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
 /* =========================================
 📱 MOBILE MENU TOGGLE FIX
 ========================================= */
