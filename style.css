@@ -1965,3 +1965,37 @@ textarea.form-input {
   }
 
 }
+@media (max-width:768px){
+
+  .contact-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+
+  .contact-form{
+    grid-template-columns:1fr;
+  }
+
+  .form-group-full{
+    grid-column:span 1;
+  }
+
+  .contact-form .btn-primary{
+    grid-column:span 1;
+    width:100%;
+  }
+
+  .footer-nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
+    text-align:center;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:1rem;
+    text-align:center;
+  }
+
+}
