@@ -2013,3 +2013,7 @@ textarea.form-input {
   }
 
 }
+.social-icon:hover .fa-instagram{
+  color:#E1306C;
+  text-shadow:0 0 10px #E1306C;
+}
