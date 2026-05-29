@@ -176,9 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeMatrixRain();
 
   function drawMatrixRain() {
-    mCtx.fillStyle = 'rgba(5, 8, 22, 0.05)';
+    // Fade out previous frames without painting a solid background color.
+    // This keeps the canvas transparent so the live video background is visible underneath.
+    mCtx.globalCompositeOperation = 'destination-out';
+    mCtx.fillStyle = 'rgba(0, 0, 0, 0.08)';
     mCtx.fillRect(0, 0, width, height);
 
+    // Reset composite operation to draw the new characters
+    mCtx.globalCompositeOperation = 'source-over';
     mCtx.fillStyle = 'rgba(0, 255, 209, 0.35)'; // Cyan-green overlay text
     mCtx.font = `${fontSize}px monospace`;
 
@@ -538,38 +543,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
       }, 1500);
     });
-  }
-
-});
-/* your existing code above */
-
-/* =====================================
-📱 MOBILE NAVIGATION MENU
-===================================== */
-
-const mobileToggle = document.getElementById('mobile-toggle');
-const navMenu = document.getElementById('nav-links');
-
-mobileToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
-/* =========================================
-📱 MOBILE MENU TOGGLE FIX
-========================================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const mobileToggle = document.getElementById("mobile-toggle");
-  const navMenu = document.getElementById("nav-links");
-
-  if (mobileToggle && navMenu) {
-
-    mobileToggle.addEventListener("click", function () {
-
-      navMenu.classList.toggle("active");
-
-    });
-
   }
 
 });

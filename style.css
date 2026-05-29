@@ -47,7 +47,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-dark);
+  background-color: transparent;
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
@@ -86,7 +86,21 @@ img {
   box-shadow: var(--glow-blue);
 }
 
-/* 4. CANVAS OVERLAYS */
+/* 4. CANVAS OVERLAYS & VIDEO BACKGROUND */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -3;
+  pointer-events: none;
+  opacity: 0.18; /* Blends the video subtlely into the dark theme */
+  filter: saturate(1.1) contrast(1.15) brightness(0.9);
+  transition: opacity 1s ease;
+}
+
 #bg-canvas {
   position: fixed;
   top: 0;
